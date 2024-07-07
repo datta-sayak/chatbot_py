@@ -9,7 +9,7 @@ from nltk.stem import WordNetLemmatizer
 
 lemmatizer = WordNetLemmatizer()
 
-intents = json.loads(open(r'C:\Users\bharp\OneDrive\Desktop\chatbotnew\intents3.json').read())
+intents = json.loads(open(r'your file path goes here \intents2.json').read())
 
 words = []
 classes = []
@@ -65,6 +65,6 @@ model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy
 
 hist = model.fit(np.array(trainX), np.array(trainY), epochs=200, batch_size=26, verbose=10)
 model.save('chatbot_model.h5', hist)
-print('Done')
+print('Success! ')
 
 
