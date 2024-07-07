@@ -9,7 +9,7 @@ from nltk.stem import WordNetLemmatizer
 from keras.models import load_model # type: ignore
 
 lemmatizer = WordNetLemmatizer()
-intents = json.loads(open(r'C:\Users\bharp\OneDrive\Desktop\chatbotnew\intents3.json').read())
+intents = json.loads(open(r'your file path goes here \intents2.json').read())
 
 words = pickle.load(open('words.pkl', 'rb'))
 classes = pickle.load(open('classes.pkl', 'rb'))
@@ -51,7 +51,7 @@ def get_response(intents_list, intents_json):
             break
     return result
 
-print("GO! Bot is running!")
+print("ChatBot is Online!")
 
 while True:
     message = input("")
